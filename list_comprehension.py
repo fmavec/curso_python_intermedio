@@ -1,7 +1,11 @@
 def run():
-    squares[]
+    squares=[]
     for i in range(0, 101):
-        squares.apprend(i**2)
+        if i % 3 != 0:
+            squares.append(i**2)
+
+    
+    print(squares)
 
 
 if __name__ == '__main__':
