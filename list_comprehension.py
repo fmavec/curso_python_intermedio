@@ -1,8 +1,11 @@
 def run():
-    squares=[]
-    for i in range(0, 101):
-        if i % 3 != 0:
-            squares.append(i**2)
+    #List Comprehension
+    squares=[i**2 for i in range(0, 101) if i % 3 != 0]
+
+
+    #for i in range(0, 101):
+    #    if i % 3 != 0:
+    #        squares.append(i**2)
 
     
     print(squares)
