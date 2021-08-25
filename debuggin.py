@@ -7,9 +7,14 @@ def divisors(num):
 
 
 def run():
-    num = int(input("Ingresa un numero: "))
-    print(divisors(num))
-    print("Terminó el programa5")
+    try:
+        num = int(input("Ingresa un numero: "))
+        if num < 0:
+            raise ValueError("Ingresa un numero positivo")
+        print(divisors(num))
+        print("Terminó el programa")
+    except ValueError:
+        print("Ingresa numero positivo")
 
 
 if __name__ == '__main__':
